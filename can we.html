@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter to Someone Special</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+        .signature {
+            text-align: right;
+            margin-top: 50px;
+            font-style: italic;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        /* Hidden letter content */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="letter-container">
+        <h1>A Letter for You</h1>
+        <p>Dear NADINE (LOVE SYG OR ANYTHING),</p>
+        <p>|LETS MOVE ON TO OUR NEW CHAPTER| (PHASE 2) I hope this letter doesn't come as a surprise, but it's something I’ve been thinking about for a while, and I want to be open with you about how I've been feeling.
+
+Lately, I’ve been feeling like things haven’t been the best between us. I don’t want to end our relationship, and the last thing I want is for us to grow distant or cold with each other. The thought of you becoming a stranger to me is something I can’t bear. You’ve been such an important part of my life, and I want to keep it that way.
+
+More than anything, I want to make you happy for as long as I live. It’s why I’ve thought about how we can bring back the joy and closeness we once shared. Can we work together to be happy again? I want us to go back to being best friends, where nothing between us changes except this one thing—our happiness.
+
+I truly believe that we can make it through this and come out stronger. I’m committed to working on our relationship and finding that balance where we’re both happy, fulfilled, and comfortable. I hope you feel the same way.
+
+Let’s not let this slip away. Please, let’s talk and find a way to make this work because you mean the world to me.
+
+With love and hope,
+[TRUK]</p>
+        <p>Whether it’s the small gestures of checking in or the larger ways in which you’ve been there, I want you to know how much it all means to me. I am constantly reminded of how wonderful you are, and I hope that I can be there for you just as much as you’ve been there for me.</p>
+        <p>Please take care of yourself and know that you are cherished more than words can say. Thank you for being such a beautiful part of my life.</p>
+	<b> <p>PLEASE KINDLY SELECT ONE EITHER YES/NO </p> </b>
+
+        <!-- Insert your image here -->
+        <img src="no.jpg" alt="A meaningful image">
+
+        <p class="signature">With love,<br>[TRUK]</p>
+
+        <div class="buttons">
+            <button class="yes-btn" onclick="showLetter('yes')">Yes</button>
+            <button class="no-btn" onclick="showLetter('no')">No</button>
+        </div>
+    </div>
+
+    <!-- Yes letter content -->
+    <div class="container hidden" id="yes-letter">
+        <h1>Thank you for saying Yes!</h1>
+        <p>Dear [Nadine],</p>
+        <p>Your response means the world to me! I'm so glad that we are on the same page, and I can't wait for the wonderful things we’ll do together. PLEASE LET US RESET OURSELF (US) I WILL STILL LOVE YOU AS A FRIEND AND WE'LL STILL GOING TO PLAY EVERYDAY EVERYWEEK EVERYNIGHT PLEASE DONT REGRET THIS DECISION IM FIXING EVERYTHING BY MY OWNSELF ILL SACRIFICE MYSELF FOR YOU PLEASE</p>
+        <img src="sad.jpg" alt="A positive image">
+        <p class="signature">With love,<br>[TRUK]</p>
+    </div>
+
+    <!-- No letter content -->
+    <div class="container hidden" id="no-letter">
+        <h1>It’s okay you said No</h1>
+        <p>Dear [Recipient's Name],</p>
+        <p>Sometimes things don’t go as planned, and that's okay. I want you to know that no matter what, I still cherish our connection, and your honesty is what matters most. Thank you for being open with me. Let's keep moving forward with understanding and respect.</p>
+        <img src="no-image.jpg" alt="A thoughtful image">
+        <p class="signature">With care,<br>[TRUK]</p>
+    </div>
+
+    <script>
+        function showLetter(response) {
+            // Hide the original letter container
+            document.getElementById('letter-container').style.display = 'none';
+
+            // Show the appropriate letter based on the response
+            if (response === 'yes') {
+                document.getElementById('yes-letter').style.display = 'block';
+            } else {
+                document.getElementById('no-letter').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
